@@ -5,12 +5,12 @@ import endpoints.Breeds_EP;
 import endpoints.Facts_EP;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.example.App;
+import org.example.Log4j2;
 import org.testng.annotations.Test;
 
 public class getFactTest extends Hooks {
 
-    Logger logger = LogManager.getLogger(App.class);
+    Logger logger = LogManager.getLogger(Log4j2.class);
 
     @Test(testName = "M02-TC07 GET list of any of the 'fact' that max_length is 20 characters and response status is 200",
             groups = {"Positive", "Regression"})
