@@ -4,15 +4,14 @@ import base.Hooks;
 import endpoints.Breeds_EP;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.Marker;
-import org.example.App;
+import org.example.Log4j2;
 import org.testng.annotations.Test;
 import static org.hamcrest.Matchers.*;
 
 
 public class getBreedsTest extends Hooks {
 
-    Logger logger = LogManager.getLogger(App.class);
+    Logger logger = LogManager.getLogger(Log4j2.class);
 
     @Test(testName = "M01-TC01 GET the first 3 of the Breeds list with limit 3 and response status is 200",
             groups = {"Positive", "Regression"})
