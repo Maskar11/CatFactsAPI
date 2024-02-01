@@ -2,14 +2,14 @@ package test.m02_Facts;
 
 import base.Hooks;
 import endpoints.Facts_EP;
-import org.example.App;
+import org.example.Log4j2;
 import org.testng.annotations.Test;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class getFactsTest extends Hooks {
 
-    Logger logger = LogManager.getLogger(App.class);
+    Logger logger = LogManager.getLogger(Log4j2.class);
 
     @Test(testName = "M02-TC19 GET list of any of the 'fact' that max_length is 25 characters and limit=3 and response status is 200",
             groups = {"Positive", "Regression"})
