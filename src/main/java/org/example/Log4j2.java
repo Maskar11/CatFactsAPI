@@ -18,11 +18,11 @@ public class Log4j2 {
     }
 
     public static void startLogger (String testClassName){
-        logger.info("Test is Starting...");
+        logger.info(testClassName + " is Starting...");
     }
 
     public static void endLogger (String testClassName){
-        logger.info("Test is Ending...");
+        logger.info(testClassName + " is Ending...");
     }
 
 
