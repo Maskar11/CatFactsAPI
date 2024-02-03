@@ -23,7 +23,7 @@ public class getBreedsTest extends Hooks {
                 .statusCode(200);
         response.prettyPeek();
         logger.info("getBreeds_TC01() is done successfully");
-        }
+    }
 
 
     @Test(testName = "M01-TC02 GET the first 11 of the Breeds list with limit 11 and response status is 200", groups = {"Positive", "Regression"})
