@@ -17,11 +17,11 @@ public class Log4j2 {
         logger.fatal("We've just greeted the user!");
     }
 
-    public static void startLog (String testClassName){
+    public static void startLogger (String testClassName){
         logger.info("Test is Starting...");
     }
 
-    public static void endLog (String testClassName){
+    public static void endLogger (String testClassName){
         logger.info("Test is Ending...");
     }
 
