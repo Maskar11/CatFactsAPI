@@ -17,5 +17,44 @@ public class Log4j2 {
         logger.fatal("We've just greeted the user!");
     }
 
+    public static void startLog (String testClassName){
+        logger.info("Test is Starting...");
+    }
+
+    public static void endLog (String testClassName){
+        logger.info("Test is Ending...");
+    }
+
+
+    //Info Level
+    public static void info (String message) {
+        logger.info(message);
+    }
+
+
+    //Warn Level
+    public static void warn (String message) {
+        logger.warn(message);
+    }
+
+
+    //Error Level
+    public static void error (String message) {
+        logger.error(message);
+    }
+
+
+    //Fatal Level
+    public static void fatal (String message) {
+        logger.fatal(message);
+    }
+
+
+    //Debug Level
+    public static void debug (String message) {
+        logger.debug(message);
+    }
+
+
 
 }
