@@ -22,6 +22,7 @@ public class getBreedsTest extends Hooks {
         response.then()
                 .statusCode(200);
         response.prettyPeek();
+
         logger.info("getBreeds_TC01() is done successfully");
     }
 
