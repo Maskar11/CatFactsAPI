@@ -5,9 +5,11 @@ import org.apache.logging.log4j.Logger;
 
 public class Log4j2 {
 
+    // Initialize Log4j logs
     private static final Logger logger = LogManager.getLogger(Log4j2.class);
 
     public static void main(String[] args) {
+
         System.out.println("Hello, user!");
         logger.trace("We've just greeted the user!");
         logger.debug("We've just greeted the user!");
