@@ -7,8 +7,6 @@ import java.util.Properties;
 
 public class ConfigurationReader {
 
-
-
     private static Properties properties;
     private static FileInputStream input;
     private static FileOutputStream output;
@@ -24,7 +22,6 @@ public class ConfigurationReader {
 
         } catch (Exception e) {
             e.printStackTrace();
-
         }
     }
 
@@ -33,6 +30,7 @@ public class ConfigurationReader {
     }
 
     public static void set(String keyName, String value) {
+
         properties.setProperty(keyName, value);
 
         try {
