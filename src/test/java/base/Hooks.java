@@ -14,29 +14,24 @@ public class Hooks extends BaseClass {
 
     @BeforeClass
     public void setUpClass() {
-
         RestAssured.baseURI = ConfigurationReader.get("url");
         token = Token.getToken();
 
         Log4j2.startLoggerClass(this.getClass().getSimpleName());
     }
 
-
     @BeforeMethod
     public void startLoggerMethod() {
         Log4j2.startLoggerMethod(this.getClass().getSimpleName());
     }
-
 
     @AfterMethod
     public void endLoggerMethod() {
         Log4j2.endLoggerMethod(this.getClass().getSimpleName());
     }
 
-
     @AfterClass
     public void tearDownClass() {
-
         Log4j2.endLoggerClass(this.getClass().getSimpleName());
 
         Driver.closeDriver();
