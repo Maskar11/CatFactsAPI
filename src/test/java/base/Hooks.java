@@ -10,7 +10,6 @@ import utils.Driver;
 import utils.ConfigurationReader;
 import utils.Token;
 
-
 public class Hooks extends BaseClass {
 
     @BeforeClass
@@ -20,7 +19,6 @@ public class Hooks extends BaseClass {
         token = Token.getToken();
 
         Log4j2.startLoggerClass(this.getClass().getSimpleName());
-
     }
 
 
@@ -28,7 +26,6 @@ public class Hooks extends BaseClass {
     public void startLoggerMethod() {
         Log4j2.startLoggerMethod(this.getClass().getSimpleName());
     }
-
 
 
     @AfterMethod
