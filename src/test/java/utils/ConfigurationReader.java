@@ -13,7 +13,6 @@ public class ConfigurationReader {
     private static String path = "config.properties";
 
     static {
-
         try {
             input = new FileInputStream(path);
             properties = new Properties();
@@ -30,9 +29,7 @@ public class ConfigurationReader {
     }
 
     public static void set(String keyName, String value) {
-
         properties.setProperty(keyName, value);
-
         try {
             output = new FileOutputStream(path);
             properties.store(output, null);
